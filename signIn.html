@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+        <form name="frmSignIn" method="post" action="">
+                <table border="0" width="500" align="center" class="demo-table">
+                    <?php if(!empty($success_message)) { ?>	
+                    <div class="success-message"><?php if(isset($success_message)) echo $success_message; ?></div>
+                    <?php } ?>
+                    <?php if(!empty($error_message)) { ?>	
+                    <div class="error-message"><?php if(isset($error_message)) echo $error_message; ?></div>
+                    <?php } ?>
+                    <tr>
+                       <td>Email</td>
+                        <td><input type="text" class="demoInputBox" name="userEmail" value=></td>
+                    </tr>
+                    <tr>
+                            <td>Password</td>
+                            <td><input type="password" class="demoInputBox" name="password" value=""></td>
+                        </tr>
+                    <tr>
+                            <td colspan=2>
+                            <input type="submit" name="SignIn-user" value="Sign In" class="btnSignIn"></td>
+                        </tr>
+                    
+                        
+                </table>
+            </form>
+</body>
+</html>
